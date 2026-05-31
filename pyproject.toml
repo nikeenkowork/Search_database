@@ -5,7 +5,7 @@ description = ""
 authors = [
     {name = "Denys",email = " nikeenko.work@gmail.com"}
 ]
-requires-python = ">=3.14"
+requires-python = ">=3.12,<3.14"
 dependencies = [
     "requests (>=2.34.2,<3.0.0)",
     "psycopg2-binary (>=2.9.12,<3.0.0)",

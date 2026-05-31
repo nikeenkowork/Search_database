@@ -1,5 +1,6 @@
 import requests
 
+
 def get_country_coordinates(country: str) -> tuple[float, float]:
     """
     Возвращает координаты страны (lat, lon) через Nominatim API.
@@ -13,9 +14,7 @@ def get_country_coordinates(country: str) -> tuple[float, float]:
         "limit": 1,
     }
 
-    headers = {
-        "User-Agent": "geo-coordinates-app"
-    }
+    headers = {"User-Agent": "geo-coordinates-app"}
 
     response = requests.get(url, params=params, headers=headers, timeout=10)
 
@@ -43,6 +42,7 @@ def get_country_coordinates(country: str) -> tuple[float, float]:
     # lat — широта (latitude), lon — долгота (longitude)
     # data[0] — первый результат от Nominatim API
     # значения преобразуются из строк в float
+
 
 # ИНИЦИАЛИЗАЦИЯ
 if __name__ == "__main__":

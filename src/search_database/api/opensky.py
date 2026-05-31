@@ -1,5 +1,6 @@
 import requests
-from nominatim import get_country_coordinates
+
+from src.search_database.api.nominatim import get_country_coordinates
 
 
 def get_user_countries() -> list:
@@ -41,10 +42,7 @@ def get_states() -> list:
 
 
 def filter_aircraft_by_country(
-    states: list,
-    lat: float,
-    lon: float,
-    radius: float = 5
+    states: list, lat: float, lon: float, radius: float = 5
 ) -> list:
     """
     Фильтрует самолеты по координатам страны (очень упрощенная модель).
