@@ -11,7 +11,7 @@ def get_country_coordinates(country: str) -> tuple[float, float]:
     params = {
         "q": country,
         "format": "json",
-        "limit": 1,
+        "limit": 1
     }
 
     headers = {"User-Agent": "geo-coordinates-app"}
