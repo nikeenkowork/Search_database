@@ -7,7 +7,7 @@
 
 import psycopg2
 
-from src.search_database.config import DB_CONFIG
+from config import DB_CONFIG
 
 
 class DBManager:

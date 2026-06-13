@@ -1,4 +1,4 @@
-from src.search_database.database.connection import get_connection
+from database.connection import get_connection
 
 
 def insert_country(name, lat, lon):

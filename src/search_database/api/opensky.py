@@ -1,6 +1,6 @@
 import requests
 
-from src.search_database.api.nominatim import get_country_coordinates
+from api.nominatim import get_country_coordinates
 
 
 def get_user_countries() -> list:
